@@ -13,6 +13,7 @@ import { WorkshopmainComponent } from './components/workshop/workshopmain/worksh
 import { WsnavbarComponent } from './components/workshop/wsnavbar/wsnavbar.component';
 import { LoginComponent } from './components/login/login.component';
 import { OutSideClickDirective } from './out-side-click.directive';
+import { WsexploreComponent } from './components/workshop/wsexplore/wsexplore.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { OutSideClickDirective } from './out-side-click.directive';
     WorkshopmainComponent,
     WsnavbarComponent,
     LoginComponent,
-    OutSideClickDirective
+    OutSideClickDirective,
+    WsexploreComponent
   ],
   imports: [
     BrowserModule,

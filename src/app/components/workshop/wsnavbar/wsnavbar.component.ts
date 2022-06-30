@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-wsnavbar',
@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WsnavbarComponent implements OnInit {
 
+  @Output() changeWsPage = new EventEmitter;
+  @Input() public resource = "";
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  onNavbarClick(res: string){
+    this.changeWsPage.emit(res);
+  }
 }
