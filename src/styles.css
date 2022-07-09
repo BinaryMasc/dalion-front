@@ -159,7 +159,7 @@
 .button-get-started2 {
   background-color: #111827;
   border: 1px solid transparent;
-  border-radius: .75rem;
+  border-radius: .5rem;
   box-sizing: border-box;
   color: #FFFFFF;
   cursor: pointer;
@@ -172,7 +172,7 @@
   text-align: center;
   text-decoration: none #6B7280 solid;
   text-decoration-thickness: auto;
-  transition-duration: .2s;
+  transition-duration: .5s;
   transition-property: background-color,border-color,color,fill,stroke;
   transition-timing-function: cubic-bezier(.4, 0, 0.2, 1);
   user-select: none;

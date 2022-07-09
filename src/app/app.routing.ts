@@ -8,6 +8,7 @@ import { ProjectsComponent } from "./components/projects/projects.component";
 import { DalioncoinInfoComponent } from "./components/dalioncoin-info/dalioncoin-info.component";
 import { ErrorComponent } from "./components/error/error.component";
 import { WorkshopmainComponent } from "./components/workshop/workshopmain/workshopmain.component";
+import { SignUpComponent } from "./components/sign-up/sign-up.component";
 
 const appRoutes: Routes = [
     {path: '', component: HomeComponent},
@@ -15,6 +16,7 @@ const appRoutes: Routes = [
     {path: 'projects', component: ProjectsComponent},
     {path: 'about-us', component: AboutUsComponent},
     {path: 'dalioncoin-info', component: DalioncoinInfoComponent},
+    {path: 'sign-up', component : SignUpComponent},
     {path: 'workshop', component : WorkshopmainComponent},
 
     {path: '**', component : ErrorComponent}

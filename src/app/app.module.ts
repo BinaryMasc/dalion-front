@@ -14,6 +14,8 @@ import { WsnavbarComponent } from './components/workshop/wsnavbar/wsnavbar.compo
 import { LoginComponent } from './components/login/login.component';
 import { OutSideClickDirective } from './out-side-click.directive';
 import { WsexploreComponent } from './components/workshop/wsexplore/wsexplore.component';
+import { SidebarCategoriesComponent } from './components/workshop/sidebar-categories/sidebar-categories.component';
+import { SignUpComponent } from './components/sign-up/sign-up.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { WsexploreComponent } from './components/workshop/wsexplore/wsexplore.co
     WsnavbarComponent,
     LoginComponent,
     OutSideClickDirective,
-    WsexploreComponent
+    WsexploreComponent,
+    SidebarCategoriesComponent,
+    SignUpComponent
   ],
   imports: [
     BrowserModule,
