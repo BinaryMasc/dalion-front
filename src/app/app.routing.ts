@@ -9,6 +9,7 @@ import { DalioncoinInfoComponent } from "./components/dalioncoin-info/dalioncoin
 import { ErrorComponent } from "./components/error/error.component";
 import { WorkshopmainComponent } from "./components/workshop/workshopmain/workshopmain.component";
 import { SignUpComponent } from "./components/sign-up/sign-up.component";
+import { UserComponent } from "./components/workshop/user/user.component";
 
 const appRoutes: Routes = [
     {path: '', component: HomeComponent},
@@ -18,6 +19,7 @@ const appRoutes: Routes = [
     {path: 'dalioncoin-info', component: DalioncoinInfoComponent},
     {path: 'sign-up', component : SignUpComponent},
     {path: 'workshop', component : WorkshopmainComponent},
+    {path: 'user-test', component: UserComponent},
 
     {path: '**', component : ErrorComponent}
 
