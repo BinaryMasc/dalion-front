@@ -2,7 +2,11 @@
 
 <!--Navbar here-->
 <app-wsnavbar (changeWsPage)="changeUrlResource($event)" [resource]="resource"></app-wsnavbar>
+<router-outlet></router-outlet>
+
+<!--
 <app-wsexplore *ngIf="resource == 'explore'"></app-wsexplore>
 <div *ngIf="resource == 'my-services'">my-services</div>
 <div *ngIf="resource == 'my-profile'">my-profile</div>
 <div *ngIf="resource == 'wallet'">wallet</div>
+-->

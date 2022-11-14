@@ -15,6 +15,5 @@ export class WsnavbarComponent implements OnInit {
   }
 
   onNavbarClick(res: string){
-    this.changeWsPage.emit(res);
   }
 }

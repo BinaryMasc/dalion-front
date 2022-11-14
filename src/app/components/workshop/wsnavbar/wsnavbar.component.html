@@ -1,13 +1,13 @@
 <nav class="relative flex flex-wrap p-3 bg-gray-800 text-gray-400 text-base shadow-lg navbar navbar-expand-lg navbar-light">
     <div class="flex items-center w-2/3 ">
-      
+
       <div>
         <div class="text-center px-5">
           <div class="inline-block ">
-            <a class="px-3 navbarbutton cursor-pointer" [ngClass]="resource=='explore' ? 'active' : ''" (click)="onNavbarClick('explore')" [routerLinkActive]="['active']">Explore</a> 
-            <a class="px-3 navbarbutton cursor-pointer" [ngClass]="resource=='my-services' ? 'active' : ''" (click)="onNavbarClick('my-services')" >My services</a> 
-            <a class="px-3 navbarbutton cursor-pointer" [ngClass]="resource=='my-profile' ? 'active' : ''" (click)="onNavbarClick('my-profile')" [routerLinkActive]="['active']">My Profile</a> 
-            <a class="px-3 navbarbutton cursor-pointer" [ngClass]="resource=='wallet' ? 'active' : ''" (click)="onNavbarClick('wallet')" [routerLinkActive]="['active']">Wallet</a> 
+            <a class="px-3 navbarbutton cursor-pointer" [ngClass]="resource=='explore' ? 'active' : ''" [routerLink]="['./']" routerLinkActive="router-link-active"  [routerLinkActive]="['active']">Explore</a>
+            <a class="px-3 navbarbutton cursor-pointer" [ngClass]="resource=='my-services' ? 'active' : ''" (click)="onNavbarClick('my-services')" >My services</a>
+            <a class="px-3 navbarbutton cursor-pointer" [ngClass]="resource=='my-profile' ? 'active' : ''" [routerLink]="['./user-test']" [routerLinkActive]="['active']">My Profile</a>
+            <a class="px-3 navbarbutton cursor-pointer" [ngClass]="resource=='wallet' ? 'active' : ''" (click)="onNavbarClick('wallet')" [routerLinkActive]="['active']">Wallet</a>
           </div>
         </div>
       </div>
