@@ -13,10 +13,15 @@ export class WsArticleComponent implements OnInit {
   @Input() user = '';
   @Input() categories = '';
   @Input() image = '';
+  @Input() articleID = '';
 
   constructor() { }
 
   ngOnInit(): void {
+
+    if (!this.title && this.articleID){
+
+    }
   }
 
 }
