@@ -13,4 +13,8 @@ export class DalionConfigProviderService {
    public static getApiURL(controller: string = ''):string{
     return "https://localhost:7057/api/" + controller + (controller ? "/" : "");
    }
+
+   public static getApiWithParams(controllerAndParams: string = ''):string{
+    return "https://localhost:7057/api/" + controllerAndParams;
+   }
 }

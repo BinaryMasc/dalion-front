@@ -42,7 +42,11 @@ const appRoutes: Routes = [
             {path: 'my-profile', component: },
             {path: 'wallet', component: },
             */
-            {path: 'user-test', component: UserComponent}
+            {
+              path: 'user/:username',
+
+              component: UserComponent
+            }
 
           ]
         }
