@@ -25,7 +25,7 @@ export class UserComponent implements OnInit {
 
   ngOnInit(): void {
   if (!this.userName)
-    this.userName = this.router.url.split("/user/")[1];
+    this.userName = this.router.url.split("/user/")[1].split('/')[0];
 
   else this.router.navigate(['/Error']);
 
@@ -39,14 +39,16 @@ export class UserComponent implements OnInit {
     console.log(data);
   });
 
-
-
   this.http.get<any>(DalionConfigProviderService.getApiWithParams("Workshop?username=") + this.userName)
-  .subscribe((data) => {
-    this.articles = data;
+  .subscribe((services) => {
+    this.articles = services;
 
-    console.log(data);
+    console.log(services);
   });
+
+
+
+
 
 
 
