@@ -16,7 +16,7 @@
                     <label>{{("@" + userName)}}</label>
                 </div>
                 <div class="absolute   right-0 m-5 p-5" >
-                    <button class=" button-get-started" (click)="message()">Message</button>
+                    <button class=" button-get-started" (click)="message()">{{'Message' | translate}}</button>
                 </div>
                 <div class="flex justify-center p-2 text-gray-800">
                     <p class="inline-flex">{{profession}}</p>
@@ -57,7 +57,7 @@
             <div class="block justify-self-center bg-white border shadow-lg rounded-lg p-5 m-4 w-3/4">
                 <div>
                     <div class="flex justify-center text-gray-800">
-                        <label>Services</label>
+                        <label>{{'Services' | translate}}</label>
                     </div>
 
                     <!--

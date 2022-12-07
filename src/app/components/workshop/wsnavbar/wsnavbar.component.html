@@ -4,9 +4,9 @@
       <div>
         <div class="text-center px-5">
           <div class="inline-block ">
-            <a class="px-3 navbarbutton cursor-pointer" [ngClass]="resource=='explore' ? 'active' : ''" [routerLink]="['./']" routerLinkActive="router-link-active"  [routerLinkActive]="['active']">Explore</a>
-            <a class="px-3 navbarbutton cursor-pointer" [ngClass]="resource=='my-services' ? 'active' : ''" (click)="onNavbarClick('my-services')" >My services</a>
-            <a class="px-3 navbarbutton cursor-pointer" [ngClass]="resource=='my-profile' ? 'active' : ''" [routerLink]="['./user/userfromApi']" [routerLinkActive]="['active']">My Profile</a>
+            <a class="px-3 navbarbutton cursor-pointer" [ngClass]="resource=='explore' ? 'active' : ''" [routerLink]="['./']" routerLinkActive="router-link-active"  [routerLinkActive]="['active']">{{'Explore' | translate}}</a>
+            <a class="px-3 navbarbutton cursor-pointer" [ngClass]="resource=='my-services' ? 'active' : ''" (click)="onNavbarClick('my-services')" >{{'My services' | translate}}</a>
+            <a class="px-3 navbarbutton cursor-pointer" [ngClass]="resource=='my-profile' ? 'active' : ''" [routerLink]="['./user/userfromApi']" [routerLinkActive]="['active']">{{'My Profile' | translate}}</a>
             <a class="px-3 navbarbutton cursor-pointer" [ngClass]="resource=='wallet' ? 'active' : ''" (click)="onNavbarClick('wallet')" [routerLinkActive]="['active']">Wallet</a>
           </div>
         </div>
@@ -14,6 +14,6 @@
     </div>
     <!--if session null-->
     <div class="flex items-center justify-end text-center w-1/3">
-        <button class="button-get-started" role="button" [routerLink]="['/sign-up']">Get started!</button>
+        <button class="button-get-started" role="button" [routerLink]="['/sign-up']">{{'Get started' | translate}}</button>
     </div>
   </nav>

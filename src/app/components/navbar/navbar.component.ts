@@ -6,21 +6,23 @@ import { Component, OnInit, EventEmitter, Output } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-  
+
   public lang : string;
   @Output() callLoginModal = new EventEmitter();
-  
-  constructor() { 
+
+  constructor() {
     this.lang = localStorage.getItem('language') ?? "EN";
   }
 
   ngOnInit() {
-    
+
   }
 
   onLanguageChange(val: any){
     localStorage.setItem('language', val.value);
     this.lang = val.value;
+
+    window.location.reload();
   }
 
 
